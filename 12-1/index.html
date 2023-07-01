@@ -17,15 +17,8 @@
     </div>
     <button class="click">クリック</button>
     <script>
-        let flag = 1;
         $('button').click(function () {
-            if (flag === 1) {
-                $(".box > div").addClass("action");
-                flag = 0;
-            } else if (flag === 0) {
-                $(".box > div").removeClass("action");
-                flag = 1;
-            }
+            $(".box > div").toggleClass("action");
         });
     </script>
 </body>
